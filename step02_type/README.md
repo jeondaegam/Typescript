@@ -1,8 +1,6 @@
-## TypeScript
-
-
+#2.2 Types of TS part One (14:26)
 ### Types
-기본 타입  
+기본 타입
 ```typescript
 let a : number = 1;
 let b : string = "il";
@@ -36,7 +34,7 @@ if (player.age && player.age < 10) {
 
 재사용을 위해 player를 type으로 만들어보자
 - 참고로 type은 어느 타입에나 적용할 수 있다!
-- 
+-
 ```typescript
 type Age = number;
 type Player = {
