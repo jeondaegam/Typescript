@@ -1,5 +1,6 @@
 class Players {
   constructor(
+      // 아무것도 작성하지 않은 default는 public이다.
       private firstName: string, // == this.firstName = firstName;
       private lastName: string,
       public nickname: string
