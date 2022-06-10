@@ -1,0 +1,20 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "기본 타입  \r ```typescript\r let a : number = 1;\r let b : string = \"il\";\r let c : boolean = true\r let d : boolean[] = [true];\r let e : number[] = [1,2];",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeondaegam/Typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeondaegam/Typescript/issues"
+  },
+  "homepage": "https://github.com/jeondaegam/Typescript#readme"
+}
