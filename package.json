@@ -4,7 +4,8 @@
   "description": "기본 타입  \r ```typescript\r let a : number = 1;\r let b : string = \"il\";\r let c : boolean = true\r let d : boolean[] = [true];\r let e : number[] = [1,2];",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "repository": {
     "type": "git",

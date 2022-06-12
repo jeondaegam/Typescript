@@ -71,3 +71,66 @@ JavaScript 코드의 모양을 TypeScript에 설명해주는 파일이다.
 
 d.ts 파일
 정의파일에서 타입스크립트가 우리가 사용하는 타입을 찾아낸다. 
+
+
+## @use a JSDoc
+JSDoc?
+코멘트로 이루어진 문법
+함수 바로 위에 코메트를 적으면 타입스크립트가 이를 읽는다.
+
+js => ts 코드로 모두 바꾸기 어려울 때, js코드 위에 코멘트를 적어 
+타입을 체크하거나 보호장치를 더할 수 있다.
+
+이미 프로덕션에서 사용중인 웹사이트거나 서버에서 돌아가는 코드인데
+타입스크립트 보호는 받고 싶다면 
+tsconfig.json의 allowJs:true에 더해 코멘트를 열심히 달아주자
+- tsconfig.json
+```json
+{
+  "allowJs": true
+}
+```
+[코멘트 작성 방법](https://jsdoc.app/)
+
+## package.json
+```json
+// start를 실행하면 build 폴더 안의 index.js 파일을 실행한다.
+"start": "node build/index.js" 
+```
+
+
+## Blocks
+ts-node  
+빌드 없이 타입스크립트를 실행할 수 있게 한다.   
+개발 환경에서만 사용한다. 빌드 없이 빠르게 새로고침 하고 싶을 때 사용!
+ts-node가 컴파일할 필요 없이 타입스크립트 코드를 대신 실행해줘
+```shell
+npm i -D ts-node
+```
+
+```json
+"scripts": {
+"dev": "ts-node src/index", //확장자 .ts는 빼도 ok
+}
+```
+
+nodemon
+자동으로 커맨드를 재실행해줘서 일일히 커맨트를 
+재실행 하거나 서버를 재시작할 필요가 없어진다.
+
+```shell
+npm i nodemon
+```
+
+Hash 값을 만든다.
+crypto
+```typescript
+// import * as crypto from "crypto"
+import  crypto from "crypto"
+```
+*as 와 같이 불러오고 싶지 않다면
+"esModuleInterop": true,
+설정은 tsconfing.json에 더해주자
+
+
+## 5.6 Definitely Typed
