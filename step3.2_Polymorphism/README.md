@@ -1,4 +1,4 @@
-Polymorphism(다형성)
+## Polymorphism(다형성)
 
 그리스어 Poly
 many, several, much, multi
@@ -11,16 +11,17 @@ form, structure, 구조
 
 함수는 여러가지 다른 형태를 가지고 있다.
 
-Concrete type이란?
-우리가 전부터 봐왔던 타입들을 의미한다.
+### Concrete type이란?
+우리가 전부터 봐왔던 타입들을 의미한다.  
 number, string, boolean, void, unknown 등등
 
-Generic
-타입의 placeholder같은 것이다.
+
+### Generic
+타입의 placeholder같은 것이다.  
 concrete type 대신 사용할 수 있다.
 사용할 확실한 타입을 모를 때 사용한다.
 
-사용방법  
+#### 사용방법  
 `<{Generic변수명}>(arr: number[]):void`
 제네릭을 받는다는걸 알려주자!
 
